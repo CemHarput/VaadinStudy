@@ -7,6 +7,7 @@ import javax.persistence.ManyToOne;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Entity
 public class Contact extends AbstractEntity {
@@ -30,6 +31,9 @@ public class Contact extends AbstractEntity {
     @Email
     @NotEmpty
     private String email = "";
+
+
+
 
     @Override
     public String toString() {
